@@ -1,0 +1,271 @@
+html{
+    /* cursor: none; */
+    height:100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height:300vh;
+
+
+}
+/* 비디오배경 */
+.back-box{
+    overflow: hidden;
+}
+.vedio-box{
+    top:-450px;
+    position: relative;
+    left:-270px;
+}
+/* 마우스커서 */
+.circleCursor{
+    border-radius: 50%;
+    background-color: red;
+    width:20px;
+    height:20px;
+    position:absolute;
+    z-index: 1;
+
+}
+
+/* 메인섹션 */
+.section-main{
+ 
+    background-size: cover;
+    height:100vh;   
+}
+.side-bar{
+    position: fixed;
+    right: 10px;
+    bottom : 50px;
+    width: 60px;
+    height: 450px;
+    border: solid 1px white;
+    background-color: beige;
+    flex-direction: column;
+    z-index: 99;
+}
+.box{
+    border: solid 1px black;
+    width: 95%;
+    height : 15%;
+    margin-top: 15px;
+}
+
+header{
+    height:8rem;
+}
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px rgb(134, 132, 132);
+}
+ul{
+    list-style: none;
+    display: inline-block;
+}
+.menu{
+    list-style: none;
+}
+.main-menu > .nav > ul{
+    display: flex;
+    gap:2.5rem;
+    margin-left:8rem;
+}
+a{
+    text-decoration: none;
+    color:#32b2b2;
+    font-weight: bold;
+    cursor: none;
+    display: inline-block;
+    height:100%;
+}
+.sub-menu{
+    position: absolute;
+    top: calc(var(--header-height) + 10px);
+    padding: .5rem 1rem;
+    opacity: 1; 
+    transition: .5s ease-in-out;
+    background-color:rgb(78, 74, 74,0.5);
+    width:100vw;
+    padding: 1rem;
+    color:white;
+    font-weight: bold;
+  }
+.sub-menu>span:nth-child(1){
+    margin-left:9.5rem;
+    
+}
+.sub-menu>span{
+    margin-right: 3rem;
+}
+
+.btn{
+    color:white;
+}
+
+
+
+/* 포토섹션 */
+.section-photo{
+    width:100vw;
+    height:100vh;
+}
+.photo-logo{
+    font-weight: bold;
+    width:100%;
+    height:15%;
+    padding-left: 10rem;
+    font-size:2rem;
+}
+.wrapper{
+    width:98rem;
+    height:85%;
+    overflow: hidden;
+    position: absolute;
+    left:9.5rem;
+    height: 42rem;
+
+}
+.container{
+    height: 100%;
+    border: solid 1px black;
+    display: flex;
+    position: absolute; 
+  
+   
+}
+.imgbox{
+    width:40rem;
+    height:60%;
+    transition: 0.5s; 
+    flex:none;
+    top:8rem;
+    overflow: hidden;
+  
+}
+.position{
+    position: absolute;
+}
+
+img{
+    width:100%;
+    height:100%;
+    transition: 0.3s;
+ 
+}
+
+
+
+
+/* 스케줄섹션 */
+.match-schedule{
+    width:98rem;
+    height:100vh;
+    margin-left: 9.5rem;
+    height:100vh;
+}
+.schedule-logo{
+    font-weight: bold;
+    width:100%;
+    height:15%;
+    font-size:2rem;
+}
+.calendar{
+    width:100%;
+    height:85%;
+    border: solid 1px black;
+}
+
+
+
+
+
+.footer{
+    width:98rem;
+    height:100vh;
+    margin-left: 9.5rem;
+    height:30vh;
+    border:solid 1px black;
+}
+.box1{
+    width:100%;
+    height:75%;
+}
+.logo{
+    width: 20%;
+    height:50%;
+    border:solid 1px black;
+    margin-bottom: 2rem;
+
+}
+.box1 > span{
+    margin-left: 10rem;
+}
+
+
+
+/* 스타디움섹션 */
+
+
+.stadium{
+    width:98rem;
+    height:100vh;
+    margin-left: 9.5rem;
+
+}
+.stadium-logo{
+    font-weight: bold;
+    width:100%;
+    height:15%;
+    font-size:2rem;
+}
+.stadium-img{
+    width:100%;
+    height:85%;
+
+    display: flex;
+}
+.stadium-imgbox{
+    width:47%;
+    height:75%;
+    top:3rem;
+    left:3rem;
+    position: relative;
+}
+.stadium-text{
+    width:49%;
+    height:100%;
+
+}
+.stadium-text > h2>small{
+    font-size: 2rem;
+    color:rgb(192, 88, 3);
+    position:relative;
+    top:1.5rem;
+}
+.stadium-text > h2{
+    font-size : 3rem;
+    line-height: 6rem;
+    margin:0;
+    padding:0;
+}
+.description{
+    padding-right: 4rem;
+    font-size:1.2rem;
+    margin-top:1.5rem;
+}
+.navigator{
+    margin-top: 5rem;
+    display: inline-block;
+    position: relative;
+    border: solid 1px black;
+    font-size: 2rem;
+    padding-left:3rem; padding-right:3rem;
+    left:50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    transition: 0.5s;
+}
